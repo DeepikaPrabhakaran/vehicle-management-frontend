@@ -26,7 +26,7 @@ function VehiclesList() {
             <table className="table">
                 <thead>
                     <tr>
-                        <th>VEHICLE ID</th>
+                        <th>VEHICLE UNIQUE ID</th>
                         <th>NAME</th>
                         <th>VEHICLE STATUS</th>
                         <th>VEHICLE RECENT HEALTH</th>

@@ -13,6 +13,9 @@ export const retrieveVehiclesList
 = () => apiClient.get(`/vehicles/`)
 
 
+export const retrieveActiveVehiclesList
+= () => apiClient.get(`/vehicles/active`)
+
 export const registerNewVehicle
  = (newVehicle) => apiClient.post(`/vehicles/create`, newVehicle)
 

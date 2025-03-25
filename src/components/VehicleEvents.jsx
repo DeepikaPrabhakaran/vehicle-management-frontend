@@ -20,11 +20,11 @@ function VehicleEvents(){
    
        return(
            <div className="container" align="center">
-           <h2>Vehicle Events List</h2>
+           <h3>VEHICLES ISSUES LIST</h3>
            <table className = "table">
                <thead>
                    <tr>
-                       <th>VEHICLE ID</th>
+                       <th>VEHICLE UNIQUE ID</th>
                        <th>VEHICLE EVENT ID</th>
                        <th>VEHICLE HEALTH</th>
                        <th>STATUS</th>

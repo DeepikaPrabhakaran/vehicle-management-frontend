@@ -1,6 +1,6 @@
 import { Form, Formik, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
-import { registerNewVehicleEvent, retrieveVehiclesList, retrieveVehicleFaultList } from './VehicleApiServices';
+import { registerNewVehicleEvent, retrieveActiveVehiclesList, retrieveVehicleFaultList } from './VehicleApiServices';
 import { useState, useEffect } from "react";
 
 function AddVehicle() {
@@ -13,7 +13,7 @@ function AddVehicle() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        retrieveVehiclesList()
+        retrieveActiveVehiclesList()
             .then(response => { setVehiclesList(response.data) })
             .catch((error) => console.error("Error in fetching vehicle details", error));
 
